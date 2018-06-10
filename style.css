@@ -94,6 +94,8 @@ header {
     top: 0;
     left: 5%;
     transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
 }
 
 .winning-message {
@@ -138,3 +140,44 @@ header {
     color: white;
 }
 
+@media only screen and (max-width: 940px){
+    .game-title {
+        font-size: small;
+        left: 50%;
+    }
+
+    .games-played {
+        left: 20%;
+    }
+
+    .attempts {
+        left: 45%;
+    }
+
+    .accuracy {
+        left: 70%;
+    }
+
+    .label {
+        font-size: small;
+    }
+
+    .value {
+        font-size: small;
+    }
+
+    .reset {
+        left: 70%;
+        top: 90%;
+    }
+
+    #game-area {
+        width: 80%;
+    }
+
+    .card {
+        height: 15%;
+        width: 13%;
+        left: 10%;
+    }
+}
