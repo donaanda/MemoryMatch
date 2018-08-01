@@ -1,0 +1,183 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("images/hd-spiderman-3-wallpaper.jpg");
+    background-size: cover;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+
+/* header */
+header {
+    position: relative;
+    height: 18%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.game-title {
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    color: lightcyan;
+}
+
+.settings-link {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+
+}
+
+.about-link {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+/* Stats Container */
+.stats{
+    height: 5%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+.games-played {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    color: #fffabe;
+    top:0;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.attempts {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    color: aqua;
+    top:0;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.accuracy {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    color: lawngreen;
+    top:0;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.label {
+    display: inline;
+}
+
+.value {
+    display: inline;
+}
+
+.reset {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+}
+
+.winning-message {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    left: 30%;
+    transform: translate(-50%, 50%);
+    font-size: 1.5rem;
+    color: mistyrose;
+}
+
+/* Game Area */
+#game-area {
+    display: inline-block;
+    height: 70%;
+    width: 53%;
+    box-sizing: border-box;
+}
+
+
+.card {
+    position: relative;
+    display: inline-block;
+    height: 25%;
+    width: 13%;
+    left: 15%;
+    top: 15%;
+    margin: 0 2% 2% 0;
+}
+
+.front, .back {
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.about-description, .skills-list {
+    color: white;
+}
+
+@media only screen and (max-width: 940px){
+    .game-title {
+        font-size: small;
+        left: 50%;
+    }
+
+    .games-played {
+        left: 20%;
+    }
+
+    .attempts {
+        left: 45%;
+    }
+
+    .accuracy {
+        left: 70%;
+    }
+
+    .label {
+        font-size: small;
+    }
+
+    .value {
+        font-size: small;
+    }
+
+    .reset {
+        left: 70%;
+        top: 90%;
+    }
+
+    #game-area {
+        width: 80%;
+    }
+
+    .card {
+        height: 15%;
+        width: 13%;
+        left: 10%;
+    }
+}
