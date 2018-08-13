@@ -98,6 +98,12 @@ header {
     color: white;
 }
 
+.reset:hover {
+    cursor: pointer;
+    box-shadow: .5px .5px 2px 2px #e4f7ef;
+}
+
+
 .winning-message {
     height: 100%;
     position: absolute;
@@ -126,6 +132,11 @@ header {
     left: 15%;
     top: 15%;
     margin: 0 2% 2% 0;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: .5px .5px 2px 2px #e4f7ef;
 }
 
 .front, .back {
