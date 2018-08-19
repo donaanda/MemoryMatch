@@ -134,9 +134,15 @@ header {
     margin: 0 2% 2% 0;
 }
 
+
 .card:hover {
     cursor: pointer;
     box-shadow: .5px .5px 2px 2px #e4f7ef;
+}
+
+.not_hover:hover {
+    cursor: default;
+    box-shadow: initial;
 }
 
 .front, .back {
