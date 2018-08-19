@@ -26,9 +26,11 @@ function card_clicked() {
         $(this).find('.back').css('display', "none");
         if (first_card_clicked === null) {
             first_card_clicked = $(this);
+            $(this).toggleClass("not_hover");
         } else {
             attempts++;
             second_card_clicked = $(this);
+            $(this).toggleClass("not_hover");
             var firstAndSecondCardAreMatched = checkForPossibleCardsMatch(first_card_clicked, second_card_clicked);
             if (firstAndSecondCardAreMatched) {
                 actionToTakeWhenCardsAreMatched();
@@ -55,6 +57,8 @@ function flipUnmatchedCardBack() {
     $('#game-area').on('click', '.card', card_clicked);
     first_card_clicked.find('.back').css('display', 'initial');
     second_card_clicked.find('.back').css('display', 'initial');
+    first_card_clicked.toggleClass("not_hover");
+    second_card_clicked.toggleClass("not_hover");
     resetFirstAndSecondCardClickedValue();
 }
 
