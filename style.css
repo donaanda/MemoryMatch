@@ -22,6 +22,7 @@ header {
     top: 40%;
     transform: translate(-50%, -50%);
     color: lightcyan;
+    text-shadow: 1.5px 1.5px 2px #fffabe;
 }
 
 .settings-link {
@@ -45,6 +46,7 @@ header {
     width: 100%;
     position: relative;
     box-sizing: border-box;
+    font-family: Impact, Charcoal, sans-serif;
 }
 
 
