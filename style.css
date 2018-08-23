@@ -41,7 +41,7 @@ header {
 }
 
 /* Stats Container */
-.stats{
+.stats {
     height: 32px;
     width: 100%;
     position: relative;
@@ -120,8 +120,8 @@ header {
 /* Game Area */
 #game-area {
     display: inline-block;
-    height: 481px;
-    width: 603px;
+    height: 68vmin;
+    width: 84vmin;
     box-sizing: border-box;
 }
 
