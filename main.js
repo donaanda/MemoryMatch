@@ -106,6 +106,7 @@ function resetButtonClicked() {
     $(".card .back").css("display", "initial");
     displayWinningMessage("");
     shuffleCards();
+    resetCardsHoverEffects();
 }
 
 function shuffleCards() {
@@ -118,5 +119,16 @@ function shuffleCards() {
         arrayOfCards[i] = arrayOfCards[randomIndex];
         arrayOfCards[randomIndex] = temp;
         $('#game-area').append(arrayOfCards[i]);
+    }
+}
+
+function resetCardsHoverEffects() {
+    var numberOfCards = $('#game-area .card').toArray();
+    $('#game-area .card').remove();
+    for (var index = 0; index < numberOfCards.length; index++) {
+        if ($(numberOfCards[index]).hasClass("not_hover")) {
+            $(numberOfCards[index]).toggleClass("not_hover");
+        }
+        $('#game-area').append(numberOfCards[index]);
     }
 }
